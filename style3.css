@@ -1,0 +1,13 @@
+.score-table th{
+    background-color: gray;
+    color: white;
+}
+
+.score-table tr:nth-child(even){
+    background-color: antiquewhite;
+}
+
+.score-table tr:hover{
+    background-color: beige;
+}
+

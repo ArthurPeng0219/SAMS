@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width,initial-scal=1.0">
+    <title>学生个人档案管理系统</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!--整个系统-->
+    <div class="app">
+        <!--顶部导航-->
+        <header class="header">
+            <div class="logo">
+                学生个人档案管理系统
+            </div>
+            <div class="user-info">
+                <span>Arthur</span>
+                <span class="avatar">A</span>
+            </div>
+        </header>
+        <!--页面主体-->
+        <div class="layout">
+
+            <!--左侧菜单-->
+            <aside class="sidebar">
+                <nav class="menu">
+                    <a href="#" class="menu-item active">
+                        首页
+                    </a>
+                    <a href="#" class="menu-item">
+                        个人信息
+                    </a>
+                    <a href="#" class="menu-item">
+                        学习档案
+                    </a>
+                    <a href="#" class="menu-item">
+                        荣誉档案
+                    </a>
+                    <a href="#" class="menu-item">
+                        课程资料
+                    </a>
+                    <a href="#" class="menu-item">
+                        求职档案
+                    </a>
+                    <a href="#" class="menu-item">
+                        成长分析
+                    </a>
+                    <a href="#" class="menu-item">
+                        系统管理
+                    </a>
+                </nav>
+            </aside>
+            <!-- 主内容区域 -->
+            <main>
+                <!-- 页面标题 -->
+                <section class="welcome">
+                <h1>欢迎回来，Arthur</h1>
+                <p>
+                    这是你的个人成长档案管理中心
+                </p>
+                </section>
+
+                <!-- 数据统计 -->
+
+                <section class="statistics">
+                    <div class="stat-card">
+                        <div class="stat-title">
+                            平均成绩
+                        </div>
+                        <div class="stat-number">
+                            86
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-title">
+                            获得荣誉
+                        </div>
+
+                        <div class="stat-number">
+                            12
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-title">
+                            技能证书
+                        </div>
+
+                        <div class="stat-number">
+                            8
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-title">
+                            个人作品
+                        </div>
+
+                        <div class="stat-number">
+                            15
+                        </div>
+                    </div>
+                </section>
+                <!-- 内容区域-->
+                <section class="content-grid">
+
+                    <!-- 最近成绩 -->
+                    <div class="panel">
+                        <div class="panel-header">
+                            <h2>最近学习成绩</h2>
+
+                            <a href="#">
+                                查看全部
+                            </a>
+                        </div>
+
+                        <div class="score-list">
+                            <div class="score-item">
+                                <span>Java程序设计</span>
+                                <strong>92</strong>
+                            </div>
+                            <div class="score-item">
+                                <span>Python数据分析</span>
+                                <strong>88</strong>
+                            </div>
+                            <div class="score-item">
+                                <span>数据库原理</span>
+                                <strong>90</strong>
+                            </div>
+                            <div class="score-item">
+                                <span>机器学习</span>
+                                <strong>85</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <!--最近荣誉-->
+                    <div class="panel">
+                        <div class="panel-header">
+                            <h2>最近获得的荣誉</h2>
+                            <a href="#">
+                                查看全部
+                            </a>
+                        </div>
+
+                        <div class="honor-list">
+                            <div class="honor-item">
+                                <div class="honor-icon">
+                                    奖
+                                </div>
+                                <div>
+                                    <h3>优秀学生奖学金</h3>
+                                    <p>2020-06</p>
+                                </div>
+                            </div>
+
+                            <div class="honor-item">
+                                <div class="honor-icon">
+                                    奖
+                                </div>
+                                <div>
+                                    <h3>大学生创新创业项目</h3>
+                                    <p>2026-05</p>
+                                </div>
+                            </div>
+
+                            <div class="honor-item>">
+                                <div class="honor-icon">
+                                    证
+                                </div>
+                                <div>
+                                    <h3>计算机等级证书</h3>
+                                    <p>2026-04</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--快速入口-->
+
+                <section class="panel">
+                    <div class="panel-header">
+                        <h2>快速入口</h2>
+                    </div>
+                    <div class="quick-links">
+                        <a href="#" class="quick-item">
+                            <span>个人信息</span>
+                            <small>完善基本信息</small>
+                        </a>
+                        <a href="#" class="quick-item">
+                            <span>成绩档案</span>
+                            <small>管理历史成绩</small>
+                        </a>
+                        <a href="#" class="quick-item">
+                            <span>证书档案</span>
+                            <small>管理技能证书</small>
+                        </a>
+                        <a href="#" class="quick-item">
+                            <span>求职档案</span>
+                            <small>完善求职资料
+                            </small>
+                        </a>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
