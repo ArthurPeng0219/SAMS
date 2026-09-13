@@ -1,0 +1,228 @@
+/*==========
+荣誉分类
+ */
+
+.filter-panel {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+    padding: 6px;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+}
+
+.filter-item {
+    padding:8px 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: transparent;
+    color: #606266;
+    cursor: pointer;
+}
+
+.filter-item.active {
+    background-color: #ecf5ff;
+    color: #409eff;
+    font-weight: 600;
+}
+
+
+/*
+荣誉卡片
+ */
+.honor-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.honor-card {
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 20px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 10px;
+
+    transition: 0.2s;
+}
+
+/*
+Hover
+ */
+.honor-card:hover {
+    transform: translateY(-3px);
+
+    border-color: #c6e2ff;
+
+    box-shadow:
+            0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+/*
+卡片顶部
+ */
+
+.honor-card-top {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 18px;
+}
+
+/*
+左边标签
+ */
+.honor-icon {
+    width: 44px;
+
+    height: 44px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 10px;
+
+    background-color: #fff7e6;
+
+    color: #e6a23c;
+
+    font-weight: 700;
+}
+
+/*
+右边标签
+ */
+
+.honor-type {
+    padding: 4px 10px;
+
+    border-radius: 12px;
+
+    background-color: #f0f5ff;
+
+    color: #409eff;
+
+    font-size: 12px;
+}
+
+/*
+卡片正文
+ */
+
+.honor-content {
+    flex: 1;
+}
+
+.honor-content h2 {
+    margin: 0 0 10px;
+
+    font-size: 17px;
+}
+
+.honor-content p {
+    margin: 0;
+
+    color: #909399;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+/*
+卡片底部
+ */
+
+.honor-meta {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 20px;
+
+    padding-top: 14px;
+
+    border-top: 1px solid #f0f0f0;
+
+    color: #909399;
+
+    font-size: 13px;
+}
+
+/*
+操作按钮
+ */
+
+.honor-actions {
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 8px;
+
+    margin-top: 14px;
+}
+
+.honor-actions button {
+    padding: 6px 10px;
+
+    border: none;
+
+    background-color: transparent;
+
+    color: #409eff;
+
+    cursor: pointer;
+}
+
+.honor-actions button:last-child {
+    color: #f56c6c;
+}
+
+
+/*
+响应式
+ */
+
+@media (max-width: 992px) {
+
+    .honor-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .honor-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .filter-panel {
+        overflow-x: auto;
+    }
+
+    .filter-item {
+        flex-shrink: 0;
+    }
+
+}
