@@ -1,0 +1,161 @@
+/* =====================
+   Panel
+   ===================== */
+
+.panel {
+    padding: 20px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 10px;
+}
+
+
+/* =====================
+   Panel Header
+   ===================== */
+
+.panel-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.panel-header h2 {
+    margin: 0;
+
+    font-size: 18px;
+}
+
+
+/* =====================
+   Button
+   ===================== */
+
+.primary-button,
+.secondary-button {
+    padding: 10px 18px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+}
+
+.primary-button {
+    border: 1px solid #409eff;
+
+    background-color: #409eff;
+
+    color: white;
+}
+
+.secondary-button {
+    border: 1px solid #dcdfe6;
+
+    background-color: white;
+
+    color: #606266;
+}
+
+.primary-button:hover {
+    opacity: 0.9;
+}
+
+.secondary-button:hover {
+    background-color: #f5f7fa;
+}
+
+
+/*
+表格
+ */
+
+.data-table {
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+    padding: 14px 16px;
+
+    text-align: left;
+
+    border-bottom: 1px solid #ebeef5;
+}
+
+.data-table th {
+    background-color: #f8f9fb;
+
+    color: #606266;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+.data-table td {
+    font-size: 14px;
+}
+
+.data-table tbody tr:hover {
+    background-color: #f8fbff;
+}
+
+
+/*
+状态标签
+ */
+
+.status {
+    display: inline-block;
+
+    padding: 4px 10px;
+
+    border-radius: 12px;
+
+    font-size: 12px;
+}
+
+.status.success {
+    background-color: #f0f9eb;
+
+    color: #67c23a;
+}
+
+.status.good {
+    background-color: #ecf5ff;
+
+    color: #409eff;
+}
+
+/*
+搜索框
+ */
+
+.search-input {
+    width: 220px;
+
+    height: 36px;
+
+    padding: 0 12px;
+
+    border: 1px solid #dcdfe6;
+
+    border-radius: 6px;
+
+    outline: none;
+}
+
+.search-input:focus {
+    border-color: #409eff;
+}

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>个人信息 - 学生个人档案管理系统</title>
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages/profile.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- Header -->
+    <header class="header">
+
+        <div class="logo">
+            学生个人档案管理系统
+        </div>
+
+        <div class="user-info">
+
+            <span>Arthur</span>
+
+            <span class="avatar">
+                A
+            </span>
+
+        </div>
+
+    </header>
+
+
+    <div class="layout">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <nav class="menu">
+
+                <a href="index.html"
+                   class="menu-item">
+                    首页
+                </a>
+
+                <a href="profile.html"
+                   class="menu-item active">
+                    个人信息
+                </a>
+
+                <a href="grades.html"
+                   class="menu-item">
+                    学习档案
+                </a>
+
+                <a href="honors.html"
+                   class="menu-item">
+                    荣誉档案
+                </a>
+
+                <a href="courses.html"
+                   class="menu-item">
+                    课程资料
+                </a>
+
+                <a href="practice.html"
+                   class="menu-item">
+                    实践档案
+                </a>
+
+                <a href="resume.html"
+                   class="menu-item">
+                    求职档案
+                </a>
+
+                <a href="growth.html"
+                   class="menu-item">
+                    成长分析
+                </a>
+
+                <a href="settings.html"
+                   class="menu-item">
+                    系统管理
+                </a>
+
+            </nav>
+
+        </aside>
+
+
+        <!-- Main -->
+        <main class="main">
+
+            <main class="main">
+
+                <!-- 页面标题 -->
+                <section class="page-header">
+
+                    <div>
+                        <h1>个人信息</h1>
+
+                        <p>
+                            管理你的基本个人资料
+                        </p>
+                    </div>
+
+                    <span class="page-tag">
+            个人档案
+        </span>
+
+                </section>
+
+
+                <!-- 个人信息主体 -->
+                <section class="profile-grid">
+
+                    <!-- 左侧头像 -->
+                    <div class="panel profile-card">
+
+                        <div class="profile-avatar">
+                            A
+                        </div>
+
+                        <h2>Arthur</h2>
+
+                        <p class="profile-major">
+                            数据科学与大数据技术
+                        </p>
+
+                        <button class="secondary-button">
+                            更换头像
+                        </button>
+
+                    </div>
+
+
+                    <!-- 右侧基本信息 -->
+                    <div class="panel">
+
+                        <div class="panel-header">
+
+                            <h2>基本信息</h2>
+
+                        </div>
+
+
+                        <div class="info-list">
+
+                            <div class="info-item">
+
+                    <span class="info-label">
+                        姓名
+                    </span>
+
+                                <span>
+                        Arthur
+                    </span>
+
+                            </div>
+
+
+                            <div class="info-item">
+
+                    <span class="info-label">
+                        学号
+                    </span>
+
+                                <span>
+                        2024XXXXXXXX
+                    </span>
+
+                            </div>
+
+
+                            <div class="info-item">
+
+                    <span class="info-label">
+                        专业
+                    </span>
+
+                                <span>
+                        数据科学与大数据技术
+                    </span>
+
+                            </div>
+
+
+                            <div class="info-item">
+
+                    <span class="info-label">
+                        班级
+                    </span>
+
+                                <span>
+                        数据科学2班
+                    </span>
+
+                            </div>
+
+
+                            <div class="info-item">
+
+                    <span class="info-label">
+                        入学年份
+                    </span>
+
+                                <span>
+                        2024
+                    </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- 联系方式 -->
+                <section class="panel contact-panel">
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <h2>联系方式</h2>
+
+                            <p>
+                                更新你的联系方式
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <form class="profile-form">
+
+                        <div class="form-grid">
+
+                            <div class="form-item">
+
+                                <label for="phone">
+                                    手机号
+                                </label>
+
+                                <input
+                                        id="phone"
+                                        type="text"
+                                        placeholder="请输入手机号"
+                                >
+
+                            </div>
+
+
+                            <div class="form-item">
+
+                                <label for="email">
+                                    邮箱
+                                </label>
+
+                                <input
+                                        id="email"
+                                        type="email"
+                                        placeholder="请输入邮箱"
+                                >
+
+                            </div>
+
+
+                            <div class="form-item">
+
+                                <label for="address">
+                                    所在城市
+                                </label>
+
+                                <input
+                                        id="address"
+                                        type="text"
+                                        placeholder="请输入所在城市"
+                                >
+
+                            </div>
+
+
+                            <div class="form-item">
+
+                                <label for="github">
+                                    GitHub
+                                </label>
+
+                                <input
+                                        id="github"
+                                        type="text"
+                                        placeholder="请输入 GitHub 地址"
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-actions">
+
+                            <button
+                                    type="button"
+                                    class="secondary-button">
+                                取消
+                            </button>
+
+                            <button
+                                    type="submit"
+                                    class="primary-button">
+                                保存修改
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </section>
+
+            </main>
+
+        </main>
+
+    </div>
+
+</div>
+
+</body>
+</html>
