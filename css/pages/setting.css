@@ -1,0 +1,289 @@
+/* =========================
+   系统管理
+   ========================= */
+
+
+/* =========================
+   设置区域
+   ========================= */
+
+.settings-section {
+    margin-bottom: 24px;
+}
+
+
+.settings-section-header {
+    margin-bottom: 12px;
+}
+
+
+.settings-section-header h2 {
+    margin: 0 0 5px;
+
+    font-size: 17px;
+
+    color: #303133;
+}
+
+
+.settings-section-header p {
+    margin: 0;
+
+    color: #909399;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   设置卡片
+   ========================= */
+
+.settings-card {
+    overflow: hidden;
+
+    background-color: #fff;
+
+    border: 1px solid #ebeef5;
+
+    border-radius: 10px;
+}
+
+
+/* =========================
+   设置行
+   ========================= */
+
+.setting-row {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 18px 22px;
+
+    border-bottom: 1px solid #f0f0f0;
+}
+
+
+.setting-row:last-child {
+    border-bottom: none;
+}
+
+
+/* =========================
+   设置文字
+   ========================= */
+
+.setting-info {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 6px;
+
+    min-width: 0;
+}
+
+
+.setting-info strong {
+    color: #303133;
+
+    font-size: 14px;
+
+    font-weight: 500;
+}
+
+
+.setting-info span {
+    color: #909399;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   普通按钮
+   ========================= */
+
+.setting-button {
+    flex-shrink: 0;
+
+    padding: 7px 14px;
+
+    border: 1px solid #dcdfe6;
+
+    border-radius: 5px;
+
+    background-color: #fff;
+
+    color: #606266;
+
+    cursor: pointer;
+}
+
+
+.setting-button:hover {
+    border-color: #c6e2ff;
+
+    color: #409eff;
+
+    background-color: #ecf5ff;
+}
+
+
+/* =========================
+   Switch 开关
+   ========================= */
+
+.switch {
+    position: relative;
+
+    display: inline-block;
+
+    width: 44px;
+    height: 24px;
+
+    flex-shrink: 0;
+}
+
+
+.switch input {
+    width: 0;
+    height: 0;
+
+    opacity: 0;
+}
+
+
+.switch-slider {
+    position: absolute;
+
+    inset: 0;
+
+    border-radius: 24px;
+
+    background-color: #dcdfe6;
+
+    cursor: pointer;
+
+    transition: .2s;
+}
+
+
+.switch-slider::before {
+    content: "";
+
+    position: absolute;
+
+    width: 18px;
+    height: 18px;
+
+    left: 3px;
+    top: 3px;
+
+    border-radius: 50%;
+
+    background-color: #fff;
+
+    transition: .2s;
+
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
+}
+
+
+/* =========================
+   Switch 开启状态
+   ========================= */
+
+.switch input:checked + .switch-slider {
+    background-color: #409eff;
+}
+
+
+.switch input:checked + .switch-slider::before {
+    transform: translateX(20px);
+}
+
+
+/* =========================
+   危险操作
+   ========================= */
+
+.danger-button {
+    flex-shrink: 0;
+
+    padding: 7px 14px;
+
+    border: 1px solid #fbc4c4;
+
+    border-radius: 5px;
+
+    background-color: #fff;
+
+    color: #f56c6c;
+
+    cursor: pointer;
+}
+
+
+.danger-button:hover {
+    background-color: #fef0f0;
+
+    border-color: #f56c6c;
+}
+
+
+.danger-row {
+    background-color: #fffafa;
+}
+
+
+/* =========================
+   底部按钮
+   ========================= */
+
+.settings-footer {
+    display: flex;
+
+    justify-content: flex-end;
+
+    padding-bottom: 20px;
+}
+
+
+/* =========================
+   手机
+   ========================= */
+
+@media (max-width: 576px) {
+
+    .setting-row {
+        align-items: flex-start;
+
+        padding: 16px;
+    }
+
+
+    .setting-button,
+    .danger-button {
+        padding: 6px 10px;
+
+        font-size: 12px;
+    }
+
+
+    .settings-footer {
+        justify-content: stretch;
+    }
+
+
+    .settings-footer .primary-button {
+        width: 100%;
+    }
+
+}
