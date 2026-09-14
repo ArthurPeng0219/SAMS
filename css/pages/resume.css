@@ -1,0 +1,415 @@
+/* =========================
+   求职档案
+   ========================= */
+
+
+/* =========================
+   整体双栏布局
+   ========================= */
+
+.resume-layout {
+    display: grid;
+
+    grid-template-columns: 300px 1fr;
+
+    gap: 20px;
+
+    align-items: start;
+}
+
+
+/* =========================
+   左右区域
+   ========================= */
+
+.resume-left,
+.resume-right {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+/* =========================
+   卡片
+   ========================= */
+
+.resume-card {
+    padding: 22px;
+
+    background-color: #fff;
+
+    border: 1px solid #ebeef5;
+
+    border-radius: 10px;
+}
+
+
+/* =========================
+   个人信息
+   ========================= */
+
+.profile-card {
+    text-align: center;
+}
+
+
+.profile-avatar {
+    width: 80px;
+    height: 80px;
+
+    margin: 0 auto 15px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background-color: #ecf5ff;
+
+    color: #409eff;
+
+    font-size: 28px;
+    font-weight: 700;
+}
+
+
+.profile-card h2 {
+    margin: 0 0 6px;
+
+    font-size: 20px;
+}
+
+
+.profile-major {
+    margin: 0 0 20px;
+
+    color: #909399;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   个人信息列表
+   ========================= */
+
+.profile-info {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+    padding-top: 18px;
+
+    border-top: 1px solid #f0f0f0;
+}
+
+
+.profile-info div {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    font-size: 13px;
+}
+
+
+.profile-info span {
+    color: #909399;
+}
+
+
+.profile-info strong {
+    font-weight: 500;
+
+    color: #303133;
+
+    text-align: right;
+}
+
+
+/* =========================
+   卡片标题
+   ========================= */
+
+.card-title {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 18px;
+}
+
+
+.card-title h2 {
+    margin: 0;
+
+    font-size: 17px;
+}
+
+
+.card-title a {
+    color: #409eff;
+
+    font-size: 13px;
+
+    text-decoration: none;
+}
+
+
+/* =========================
+   教育经历
+   ========================= */
+
+.education-item {
+    position: relative;
+
+    padding-left: 18px;
+
+    border-left: 2px solid #409eff;
+}
+
+
+.education-item h3 {
+    margin: 0 0 7px;
+
+    font-size: 15px;
+}
+
+
+.education-item p {
+    margin: 0 0 7px;
+
+    color: #606266;
+
+    font-size: 13px;
+}
+
+
+.education-item span {
+    color: #909399;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   个人优势
+   ========================= */
+
+.advantage-text {
+    margin: 0;
+
+    color: #606266;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================
+   求职状态
+   ========================= */
+
+.status-tag {
+    padding: 4px 10px;
+
+    border-radius: 12px;
+
+    background-color: #f0f9eb;
+
+    color: #67c23a;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   求职意向
+   ========================= */
+
+.job-intention {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+
+.intention-item {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+
+.intention-item span {
+    color: #909399;
+
+    font-size: 13px;
+}
+
+
+.intention-item strong {
+    color: #303133;
+
+    font-size: 14px;
+
+    font-weight: 500;
+}
+
+
+/* =========================
+   技能标签
+   ========================= */
+
+.skill-list {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+
+.skill-tag {
+    padding: 5px 10px;
+
+    border-radius: 5px;
+
+    background-color: #f4f4f5;
+
+    color: #606266;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   项目经历
+   ========================= */
+
+.resume-project {
+    padding: 18px 0;
+
+    border-top: 1px solid #f0f0f0;
+}
+
+
+.resume-project:first-of-type {
+    padding-top: 0;
+
+    border-top: none;
+}
+
+
+.project-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 8px;
+}
+
+
+.project-header h3 {
+    margin: 0;
+
+    font-size: 15px;
+}
+
+
+.project-header span {
+    flex-shrink: 0;
+
+    color: #909399;
+
+    font-size: 12px;
+}
+
+
+.resume-project > p {
+    margin: 0 0 12px;
+
+    color: #606266;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   平板
+   ========================= */
+
+@media (max-width: 992px) {
+
+    .resume-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .resume-left,
+    .resume-right {
+        gap: 16px;
+    }
+
+}
+
+
+/* =========================
+   手机
+   ========================= */
+
+@media (max-width: 576px) {
+
+    .resume-card {
+        padding: 18px;
+    }
+
+
+    .job-intention {
+        grid-template-columns: 1fr;
+    }
+
+
+    .profile-info div {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 3px;
+    }
+
+
+    .profile-info strong {
+        text-align: left;
+    }
+
+
+    .project-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 4px;
+    }
+
+}
