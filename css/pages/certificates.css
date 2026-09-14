@@ -1,0 +1,151 @@
+.certificate-grid {
+    display: flex;
+
+    grid-template-columns: repeat(3,1rf);
+    gap: 20px;
+
+}
+
+/*
+卡片
+ */
+
+.certificate-card {
+    display: flex;
+    flex-direction:column ;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.certificate-card:hover {
+
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.96);
+}
+
+/*
+证书头部
+ */
+
+.certificate-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.certificate-icon {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #f0f9eb;
+    color: #67c23a;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.certificate-status {
+    padding: 4px 10px;
+    border-radius: 12px;
+    background-color: #f0f9eb;
+    color: #67c23a;
+    font-size: 12px;
+}
+
+/*
+证书标题
+ */
+
+.certificate-card h2 {
+    margin: 0 0 8px;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.certificate-type {
+    margin: 0 0 18px;
+    color: #909399;
+    font-size: 13px;
+}
+
+/*
+证书详细信息
+ */
+.certificate-info {
+    display: flex;
+    flex-direction: colum;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+/*
+每一项
+ */
+
+.certificate-info >div {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 13px;
+}
+
+.certificate-info span{
+    color: #909399;
+}
+
+.certificate-info strong {
+    font-weight: 500;
+    text-align: right;
+}
+
+/*
+证书操作
+ */
+
+.certificate-action {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: auto;
+    padding-top: 14px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.certificate-actions button {
+    padding: 6px 10px;
+    border: none;
+    background-color: transparent;
+    color: #409eff;
+    cursor:pointer;
+}
+
+.certificate-actions button:last-child {
+    color: #f56c6c;
+}
+
+/*
+响应式
+ */
+
+@media (max-width: 992px) {
+
+    .certificate-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .certificate-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
