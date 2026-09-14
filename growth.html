@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>成长分析 - 学生个人档案管理系统</title>
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages/growth.css">
+
+</head>
+
+
+<body>
+
+
+<header class="header">
+
+    <div class="logo">
+        学生个人档案管理系统
+    </div>
+
+    <div class="user-info">
+
+        <span>Arthur</span>
+
+        <span class="avatar">
+            A
+        </span>
+
+    </div>
+
+</header>
+
+
+<div class="layout">
+
+
+    <!-- 左侧菜单 -->
+
+    <aside class="sidebar">
+
+        <nav class="menu">
+
+            <a href="index.html"
+               class="menu-item">
+                首页
+            </a>
+
+            <a href="profile.html"
+               class="menu-item">
+                个人信息
+            </a>
+
+            <a href="grades.html"
+               class="menu-item">
+                学习档案
+            </a>
+
+            <a href="honors.html"
+               class="menu-item">
+                荣誉档案
+            </a>
+
+            <a href="certificates.html"
+               class="menu-item">
+                技能证书
+            </a>
+
+            <a href="courses.html"
+               class="menu-item">
+                课程资料
+            </a>
+
+            <a href="practice.html"
+               class="menu-item">
+                实践档案
+            </a>
+
+            <a href="resume.html"
+               class="menu-item">
+                求职档案
+            </a>
+
+            <a href="growth.html"
+               class="menu-item active">
+                成长分析
+            </a>
+
+            <a href="settings.html"
+               class="menu-item">
+                系统管理
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- 主内容 -->
+
+    <main class="main">
+
+
+        <!-- 页面标题 -->
+
+        <div class="page-header">
+
+            <div>
+
+                <h1>
+                    成长分析
+                </h1>
+
+                <p>
+                    从学习、技能、荣誉和实践多个维度了解自己的成长
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =========================
+             核心数据
+             ========================= -->
+
+        <section class="growth-stats">
+
+
+            <div class="growth-stat-card">
+
+                <span>
+                    平均成绩
+                </span>
+
+                <strong>
+                    86.5
+                </strong>
+
+                <small>
+                    较上学期 ↑ 3.2
+                </small>
+
+            </div>
+
+
+            <div class="growth-stat-card">
+
+                <span>
+                    已修课程
+                </span>
+
+                <strong>
+                    32
+                </strong>
+
+                <small>
+                    完成度 72%
+                </small>
+
+            </div>
+
+
+            <div class="growth-stat-card">
+
+                <span>
+                    获得荣誉
+                </span>
+
+                <strong>
+                    12
+                </strong>
+
+                <small>
+                    本学年 +4
+                </small>
+
+            </div>
+
+
+            <div class="growth-stat-card">
+
+                <span>
+                    实践项目
+                </span>
+
+                <strong>
+                    8
+                </strong>
+
+                <small>
+                    本学年 +3
+                </small>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             图表区域
+             ========================= -->
+
+        <section class="analysis-grid">
+
+
+            <!-- 成绩趋势 -->
+
+            <article class="analysis-card">
+
+                <div class="analysis-header">
+
+                    <div>
+
+                        <h2>
+                            学习成绩趋势
+                        </h2>
+
+                        <p>
+                            各学期平均成绩变化
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="chart">
+
+                    <div class="chart-y-axis">
+
+                        <span>100</span>
+                        <span>90</span>
+                        <span>80</span>
+                        <span>70</span>
+                        <span>60</span>
+
+                    </div>
+
+
+                    <div class="chart-content">
+
+                        <div class="chart-grid-line"></div>
+                        <div class="chart-grid-line"></div>
+                        <div class="chart-grid-line"></div>
+                        <div class="chart-grid-line"></div>
+
+
+                        <div class="bar-chart">
+
+                            <div class="bar-group">
+
+                                <div
+                                        class="bar"
+                                        style="height: 55%;">
+                                </div>
+
+                                <span>
+                                    大一上
+                                </span>
+
+                            </div>
+
+
+                            <div class="bar-group">
+
+                                <div
+                                        class="bar"
+                                        style="height: 63%;">
+                                </div>
+
+                                <span>
+                                    大一下
+                                </span>
+
+                            </div>
+
+
+                            <div class="bar-group">
+
+                                <div
+                                        class="bar"
+                                        style="height: 70%;">
+                                </div>
+
+                                <span>
+                                    大二上
+                                </span>
+
+                            </div>
+
+
+                            <div class="bar-group">
+
+                                <div
+                                        class="bar"
+                                        style="height: 78%;">
+                                </div>
+
+                                <span>
+                                    大二下
+                                </span>
+
+                            </div>
+
+
+                            <div class="bar-group">
+
+                                <div
+                                        class="bar"
+                                        style="height: 86%;">
+                                </div>
+
+                                <span>
+                                    大三上
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- 技能掌握 -->
+
+            <article class="analysis-card">
+
+                <div class="analysis-header">
+
+                    <div>
+
+                        <h2>
+                            技能掌握情况
+                        </h2>
+
+                        <p>
+                            当前技能学习程度
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="skill-progress-list">
+
+
+                    <div class="skill-progress">
+
+                        <div class="skill-progress-header">
+
+                            <span>
+                                Python
+                            </span>
+
+                            <strong>
+                                85%
+                            </strong>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div
+                                    class="progress-value"
+                                    style="width: 85%;">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-progress">
+
+                        <div class="skill-progress-header">
+
+                            <span>
+                                SQL
+                            </span>
+
+                            <strong>
+                                75%
+                            </strong>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div
+                                    class="progress-value"
+                                    style="width: 75%;">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-progress">
+
+                        <div class="skill-progress-header">
+
+                            <span>
+                                Java
+                            </span>
+
+                            <strong>
+                                65%
+                            </strong>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div
+                                    class="progress-value"
+                                    style="width: 65%;">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-progress">
+
+                        <div class="skill-progress-header">
+
+                            <span>
+                                Pandas
+                            </span>
+
+                            <strong>
+                                70%
+                            </strong>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div
+                                    class="progress-value"
+                                    style="width: 70%;">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-progress">
+
+                        <div class="skill-progress-header">
+
+                            <span>
+                                MySQL
+                            </span>
+
+                            <strong>
+                                72%
+                            </strong>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div
+                                    class="progress-value"
+                                    style="width: 72%;">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+
+        <!-- =========================
+             成长时间线
+             ========================= -->
+
+        <section class="analysis-card timeline-card">
+
+            <div class="analysis-header">
+
+                <div>
+
+                    <h2>
+                        成长时间线
+                    </h2>
+
+                    <p>
+                        记录大学期间的重要成长节点
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="growth-timeline">
+
+
+                <article class="growth-event">
+
+                    <div class="growth-dot"></div>
+
+                    <div class="growth-event-content">
+
+                        <span class="growth-year">
+                            2024
+                        </span>
+
+                        <h3>
+                            进入大学
+                        </h3>
+
+                        <p>
+                            开始学习数据科学与大数据技术，
+                            建立计算机基础知识体系。
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="growth-event">
+
+                    <div class="growth-dot"></div>
+
+                    <div class="growth-event-content">
+
+                        <span class="growth-year">
+                            2025
+                        </span>
+
+                        <h3>
+                            开始系统学习 Python 与 SQL
+                        </h3>
+
+                        <p>
+                            开始进行数据分析、数据库以及
+                            数据可视化相关学习。
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="growth-event">
+
+                    <div class="growth-dot"></div>
+
+                    <div class="growth-event-content">
+
+                        <span class="growth-year">
+                            2026
+                        </span>
+
+                        <h3>
+                            进入机器学习与项目实践阶段
+                        </h3>
+
+                        <p>
+                            学习机器学习、深度学习以及 Java Web，
+                            并开始进行实际项目开发。
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="growth-event">
+
+                    <div class="growth-dot"></div>
+
+                    <div class="growth-event-content">
+
+                        <span class="growth-year">
+                            2027
+                        </span>
+
+                        <h3>
+                            实习与求职
+                        </h3>
+
+                        <p>
+                            通过实习和项目进一步积累工程经验，
+                            为毕业求职做好准备。
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+</div>
+
+
+</body>
+</html>
