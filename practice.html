@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>实践档案 - 学生个人档案管理系统</title>
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages/practice.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo">
+        学生个人档案管理系统
+    </div>
+
+    <div class="user-info">
+        <span>Arthur</span>
+        <span class="avatar">A</span>
+    </div>
+
+</header>
+
+
+<div class="layout">
+
+    <!-- 左侧菜单 -->
+    <aside class="sidebar">
+
+        <nav class="menu">
+
+            <a href="index.html" class="menu-item">
+                首页
+            </a>
+
+            <a href="profile.html" class="menu-item">
+                个人信息
+            </a>
+
+            <a href="grades.html" class="menu-item">
+                学习档案
+            </a>
+
+            <a href="honors.html" class="menu-item">
+                荣誉档案
+            </a>
+
+            <a href="certificates.html" class="menu-item">
+                技能证书
+            </a>
+
+            <a href="courses.html" class="menu-item">
+                课程资料
+            </a>
+
+            <a href="practice.html" class="menu-item active">
+                实践档案
+            </a>
+
+            <a href="resume.html" class="menu-item">
+                求职档案
+            </a>
+
+            <a href="growth.html" class="menu-item">
+                成长分析
+            </a>
+
+            <a href="settings.html" class="menu-item">
+                系统管理
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- 主内容 -->
+    <main class="main">
+
+        <!-- 页面标题 -->
+        <div class="page-header">
+
+            <div>
+                <h1>实践档案</h1>
+
+                <p>
+                    记录你的项目、实习、校园实践和志愿活动
+                </p>
+            </div>
+
+            <button class="primary-button">
+                + 添加实践
+            </button>
+
+        </div>
+
+
+        <!-- 数据统计 -->
+        <section class="stats-grid">
+
+            <div class="stat-card">
+                <span class="stat-label">实践总数</span>
+                <strong class="stat-value">8</strong>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-label">项目经历</span>
+                <strong class="stat-value">4</strong>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-label">实习经历</span>
+                <strong class="stat-value">1</strong>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-label">校园实践</span>
+                <strong class="stat-value">3</strong>
+            </div>
+
+        </section>
+
+
+        <!-- 分类筛选 -->
+        <div class="filter-panel">
+
+            <button class="filter-item active">
+                全部
+            </button>
+
+            <button class="filter-item">
+                项目经历
+            </button>
+
+            <button class="filter-item">
+                实习经历
+            </button>
+
+            <button class="filter-item">
+                校园实践
+            </button>
+
+            <button class="filter-item">
+                志愿活动
+            </button>
+
+        </div>
+
+
+        <!-- 实践时间线 -->
+        <section class="practice-timeline">
+
+
+            <!-- 2026 -->
+            <div class="timeline-year">
+
+                <div class="year-title">
+                    2026
+                </div>
+
+
+                <!-- 实践记录 -->
+                <article class="practice-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="practice-card">
+
+                        <div class="practice-header">
+
+                            <div>
+
+                                <span class="practice-type">
+                                    项目经历
+                                </span>
+
+                                <h2>
+                                    传统工业缺陷识别项目
+                                </h2>
+
+                            </div>
+
+                            <span class="practice-date">
+                                2026-06
+                            </span>
+
+                        </div>
+
+
+                        <p class="practice-description">
+                            基于 YOLOv8 构建传统工业缺陷识别系统，
+                            负责数据处理、模型训练以及目标检测实验。
+                        </p>
+
+
+                        <div class="technology-list">
+
+                            <span class="tech-tag">
+                                YOLOv8
+                            </span>
+
+                            <span class="tech-tag">
+                                PyTorch
+                            </span>
+
+                            <span class="tech-tag">
+                                OpenCV
+                            </span>
+
+                            <span class="tech-tag">
+                                Python
+                            </span>
+
+                        </div>
+
+
+                        <div class="practice-result">
+
+                            <strong>实践成果</strong>
+
+                            <p>
+                                完成 PCB 缺陷检测模型训练，
+                                实现基本的缺陷识别功能。
+                            </p>
+
+                        </div>
+
+
+                        <div class="practice-actions">
+
+                            <button>
+                                查看
+                            </button>
+
+                            <button>
+                                编辑
+                            </button>
+
+                            <button>
+                                删除
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- 第二条实践 -->
+                <article class="practice-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="practice-card">
+
+                        <div class="practice-header">
+
+                            <div>
+
+                                <span class="practice-type project">
+                                    项目经历
+                                </span>
+
+                                <h2>
+                                    学生个人档案管理系统
+                                </h2>
+
+                            </div>
+
+                            <span class="practice-date">
+                                2026-09
+                            </span>
+
+                        </div>
+
+
+                        <p class="practice-description">
+                            设计并开发学生个人资料归档管理系统，
+                            用于统一管理学生大学期间的学习、荣誉、
+                            证书、课程资料和实践经历。
+                        </p>
+
+
+                        <div class="technology-list">
+
+                            <span class="tech-tag">
+                                Java
+                            </span>
+
+                            <span class="tech-tag">
+                                HTML
+                            </span>
+
+                            <span class="tech-tag">
+                                CSS
+                            </span>
+
+                            <span class="tech-tag">
+                                Vue
+                            </span>
+
+                        </div>
+
+
+                        <div class="practice-result">
+
+                            <strong>实践成果</strong>
+
+                            <p>
+                                完成系统需求分析、功能模块设计以及
+                                静态页面原型开发。
+                            </p>
+
+                        </div>
+
+
+                        <div class="practice-actions">
+
+                            <button>
+                                查看
+                            </button>
+
+                            <button>
+                                编辑
+                            </button>
+
+                            <button>
+                                删除
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- 2025 -->
+            <div class="timeline-year">
+
+                <div class="year-title">
+                    2025
+                </div>
+
+
+                <article class="practice-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="practice-card">
+
+                        <div class="practice-header">
+
+                            <div>
+
+                                <span class="practice-type campus">
+                                    校园实践
+                                </span>
+
+                                <h2>
+                                    校园实践活动
+                                </h2>
+
+                            </div>
+
+                            <span class="practice-date">
+                                2025-10
+                            </span>
+
+                        </div>
+
+
+                        <p class="practice-description">
+                            参与校园组织的实践活动，
+                            负责活动资料整理以及相关工作。
+                        </p>
+
+
+                        <div class="technology-list">
+
+                            <span class="tech-tag">
+                                Office
+                            </span>
+
+                            <span class="tech-tag">
+                                团队协作
+                            </span>
+
+                        </div>
+
+
+                        <div class="practice-result">
+
+                            <strong>实践成果</strong>
+
+                            <p>
+                                完成活动资料整理和团队协作任务。
+                            </p>
+
+                        </div>
+
+
+                        <div class="practice-actions">
+
+                            <button>
+                                查看
+                            </button>
+
+                            <button>
+                                编辑
+                            </button>
+
+                            <button>
+                                删除
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>

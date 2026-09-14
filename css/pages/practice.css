@@ -1,0 +1,342 @@
+/* =========================
+   实践档案
+   ========================= */
+
+.practice-timeline {
+    margin-top: 10px;
+}
+
+
+/* =========================
+   年份
+   ========================= */
+
+.timeline-year {
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.year-title {
+    margin-bottom: 20px;
+
+    font-size: 22px;
+    font-weight: 700;
+
+    color: #303133;
+}
+
+
+/* =========================
+   时间线
+   ========================= */
+
+.timeline-year::before {
+    content: "";
+
+    position: absolute;
+
+    top: 45px;
+    bottom: 0;
+    left: 6px;
+
+    width: 2px;
+
+    background-color: #e4e7ed;
+}
+
+
+/* =========================
+   时间线项目
+   ========================= */
+
+.practice-item {
+    position: relative;
+
+    display: flex;
+
+    padding-left: 30px;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   时间线圆点
+   ========================= */
+
+.timeline-dot {
+    position: absolute;
+
+    top: 24px;
+    left: 0;
+
+    width: 14px;
+    height: 14px;
+
+    border-radius: 50%;
+
+    background-color: #409eff;
+
+    border: 3px solid #ecf5ff;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   实践卡片
+   ========================= */
+
+.practice-card {
+    flex: 1;
+
+    padding: 22px;
+
+    background-color: #fff;
+
+    border: 1px solid #ebeef5;
+
+    border-radius: 10px;
+
+    transition: .2s;
+}
+
+.practice-card:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .06);
+}
+
+
+/* =========================
+   卡片头部
+   ========================= */
+
+.practice-header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 20px;
+
+    margin-bottom: 15px;
+}
+
+
+.practice-header h2 {
+    margin: 8px 0 0;
+
+    font-size: 18px;
+
+    color: #303133;
+}
+
+
+.practice-type {
+    display: inline-block;
+
+    padding: 4px 10px;
+
+    border-radius: 12px;
+
+    background-color: #ecf5ff;
+
+    color: #409eff;
+
+    font-size: 12px;
+}
+
+
+/* 项目经历 */
+
+.practice-type.project {
+    background-color: #ecf5ff;
+    color: #409eff;
+}
+
+
+/* 校园实践 */
+
+.practice-type.campus {
+    background-color: #f0f9eb;
+    color: #67c23a;
+}
+
+
+.practice-date {
+    flex-shrink: 0;
+
+    color: #909399;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   描述
+   ========================= */
+
+.practice-description {
+    margin: 0 0 16px;
+
+    color: #606266;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================
+   技术栈
+   ========================= */
+
+.technology-list {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-bottom: 18px;
+}
+
+
+.tech-tag {
+    padding: 5px 10px;
+
+    border-radius: 5px;
+
+    background-color: #f4f4f5;
+
+    color: #606266;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   实践成果
+   ========================= */
+
+.practice-result {
+    padding: 14px 16px;
+
+    background-color: #f8f9fa;
+
+    border-radius: 6px;
+}
+
+
+.practice-result strong {
+    display: block;
+
+    margin-bottom: 6px;
+
+    font-size: 13px;
+
+    color: #303133;
+}
+
+
+.practice-result p {
+    margin: 0;
+
+    color: #606266;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   操作按钮
+   ========================= */
+
+.practice-actions {
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 8px;
+
+    margin-top: 16px;
+
+    padding-top: 14px;
+
+    border-top: 1px solid #f0f0f0;
+}
+
+
+.practice-actions button {
+    padding: 6px 10px;
+
+    border: none;
+
+    background-color: transparent;
+
+    color: #409eff;
+
+    cursor: pointer;
+}
+
+
+.practice-actions button:hover {
+    background-color: #ecf5ff;
+
+    border-radius: 4px;
+}
+
+
+.practice-actions button:last-child {
+    color: #f56c6c;
+}
+
+
+.practice-actions button:last-child:hover {
+    background-color: #fef0f0;
+}
+
+
+/* =========================
+   平板
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .practice-header {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .practice-date {
+        order: -1;
+    }
+
+}
+
+
+/* =========================
+   手机
+   ========================= */
+
+@media (max-width: 576px) {
+
+    .practice-item {
+        padding-left: 24px;
+    }
+
+    .practice-card {
+        padding: 16px;
+    }
+
+    .year-title {
+        font-size: 20px;
+    }
+
+    .practice-header h2 {
+        font-size: 16px;
+    }
+
+}
