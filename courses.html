@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>课程资料 - 学生个人档案管理系统</title>
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages/courses.css">
+
+</head>
+
+
+<body>
+
+<div class="app">
+
+    <!-- =====================
+         Header
+         ===================== -->
+
+    <header class="header">
+
+        <div class="logo">
+            学生个人档案管理系统
+        </div>
+
+
+        <div class="user-info">
+
+            <span>
+                Arthur
+            </span>
+
+            <span class="avatar">
+                A
+            </span>
+
+        </div>
+
+    </header>
+
+
+    <div class="layout">
+
+        <!-- =====================
+             Sidebar
+             ===================== -->
+
+        <aside class="sidebar">
+
+            <nav class="menu">
+
+                <a href="index.html"
+                   class="menu-item">
+                    首页
+                </a>
+
+                <a href="profile.html"
+                   class="menu-item">
+                    个人信息
+                </a>
+
+                <a href="grades.html"
+                   class="menu-item">
+                    学习档案
+                </a>
+
+                <a href="honors.html"
+                   class="menu-item">
+                    荣誉档案
+                </a>
+
+                <a href="certificates.html"
+                   class="menu-item">
+                    技能证书
+                </a>
+
+                <a href="courses.html"
+                   class="menu-item active">
+                    课程资料
+                </a>
+
+                <a href="practice.html"
+                   class="menu-item">
+                    实践档案
+                </a>
+
+                <a href="resume.html"
+                   class="menu-item">
+                    求职档案
+                </a>
+
+                <a href="growth.html"
+                   class="menu-item">
+                    成长分析
+                </a>
+
+                <a href="settings.html"
+                   class="menu-item">
+                    系统管理
+                </a>
+
+            </nav>
+
+        </aside>
+
+
+        <!-- =====================
+             Main
+             ===================== -->
+
+        <main class="main">
+
+            <!-- 页面标题 -->
+            <section class="page-header">
+
+                <div>
+
+                    <h1>
+                        课程资料
+                    </h1>
+
+                    <p>
+                        管理课程相关的课件、实验报告和学习资料
+                    </p>
+
+                </div>
+
+
+                <button class="primary-button">
+                    + 上传资料
+                </button>
+
+            </section>
+
+
+            <!-- =====================
+                 统计卡片
+                 ===================== -->
+
+            <section class="statistics">
+
+                <div class="stat-card">
+
+                    <div class="stat-title">
+                        资料总数
+                    </div>
+
+                    <div class="stat-number">
+                        24
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-title">
+                        Java
+                    </div>
+
+                    <div class="stat-number">
+                        8
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-title">
+                        Python
+                    </div>
+
+                    <div class="stat-number">
+                        6
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-title">
+                        数据库
+                    </div>
+
+                    <div class="stat-number">
+                        5
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =====================
+                 分类筛选
+                 ===================== -->
+
+            <section class="filter-panel">
+
+                <button class="filter-item active">
+                    全部
+                </button>
+
+                <button class="filter-item">
+                    Java
+                </button>
+
+                <button class="filter-item">
+                    Python
+                </button>
+
+                <button class="filter-item">
+                    数据库
+                </button>
+
+                <button class="filter-item">
+                    机器学习
+                </button>
+
+                <button class="filter-item">
+                    其他
+                </button>
+
+            </section>
+
+
+            <!-- =====================
+                 资料列表
+                 ===================== -->
+
+            <section class="panel">
+
+                <div class="panel-header">
+
+                    <div>
+
+                        <h2>
+                            我的课程资料
+                        </h2>
+
+                    </div>
+
+
+                    <input
+                            class="search-input"
+                            type="text"
+                            placeholder="搜索资料"
+                    >
+
+                </div>
+
+
+                <div class="file-list">
+
+
+                    <!-- 文件 1 -->
+
+                    <article class="file-item">
+
+                        <div class="file-icon pdf">
+                            PDF
+                        </div>
+
+
+                        <div class="file-main">
+
+                            <h3>
+                                Java程序设计 - 第一章.pdf
+                            </h3>
+
+                            <p>
+                                Java程序设计
+                            </p>
+
+                        </div>
+
+
+                        <div class="file-meta">
+
+                            <span>
+                                PDF
+                            </span>
+
+                            <span>
+                                2.4 MB
+                            </span>
+
+                            <span>
+                                2026-09-01
+                            </span>
+
+                        </div>
+
+
+                        <div class="file-actions">
+
+                            <button>
+                                查看
+                            </button>
+
+                            <button>
+                                下载
+                            </button>
+
+                            <button>
+                                删除
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 文件 2 -->
+
+                    <article class="file-item">
+
+                        <div class="file-icon doc">
+                            DOC
+                        </div>
+
+
+                        <div class="file-main">
+
+                            <h3>
+                                Java实验报告 - 实验一.docx
+                            </h3>
+
+                            <p>
+                                Java程序设计
+                            </p>
+
+                        </div>
+
+
+                        <div class="file-meta">
+
+                            <span>
+                                DOCX
+                            </span>
+
+                            <span>
+                                1.2 MB
+                            </span>
+
+                            <span>
+                                2026-09-03
+                            </span>
+
+                        </div>
+
+
+                        <div class="file-actions">
+
+                            <button>
+                                查看
+                            </button>
+
+                            <button>
+                                下载
+                            </button>
+
+                            <button>
+                                删除
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 文件 3 -->
+
+                    <article class="file-item">
+
+                        <div class="file-icon ppt">
+                            PPT
+                        </div>
+
+
+                        <div class="file-main">
+
+                            <h3>
+                                Python数据分析 - 第三章.pptx
+                            </h3>
+
+                            <p>
+                                Python数据分析
+                            </p>
+
+                        </div>
+
+
+                        <div class="file-meta">
+
+                            <span>
+                                PPTX
+                            </span>
+
+                            <span>
+                                3.8 MB
+                            </span>
+
+                            <span>
+                                2026-09-04
+                            </span>
+
+                        </div>
+
+
+                        <div class="file-actions">
+
+                            <button>
+                                查看
+                            </button>
+
+                            <button>
+                                下载
+                            </button>
+
+                            <button>
+                                删除
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 文件 4 -->
+
+                    <article class="file-item">
+
+                        <div class="file-icon pdf">
+                            PDF
+                        </div>
+
+
+                        <div class="file-main">
+
+                            <h3>
+                                数据库原理 - 实验报告.pdf
+                            </h3>
+
+                            <p>
+                                数据库原理
+                            </p>
+
+                        </div>
+
+
+                        <div class="file-meta">
+
+                            <span>
+                                PDF
+                            </span>
+
+                            <span>
+                                1.6 MB
+                            </span>
+
+                            <span>
+                                2026-09-06
+                            </span>
+
+                        </div>
+
+
+                        <div class="file-actions">
+
+                            <button>
+                                查看
+                            </button>
+
+                            <button>
+                                下载
+                            </button>
+
+                            <button>
+                                删除
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 文件 5 -->
+
+                    <article class="file-item">
+
+                        <div class="file-icon zip">
+                            ZIP
+                        </div>
+
+
+                        <div class="file-main">
+
+                            <h3>
+                                机器学习实验代码.zip
+                            </h3>
+
+                            <p>
+                                机器学习
+                            </p>
+
+                        </div>
+
+
+                        <div class="file-meta">
+
+                            <span>
+                                ZIP
+                            </span>
+
+                            <span>
+                                5.6 MB
+                            </span>
+
+                            <span>
+                                2026-09-08
+                            </span>
+
+                        </div>
+
+
+                        <div class="file-actions">
+
+                            <button>
+                                查看
+                            </button>
+
+                            <button>
+                                下载
+                            </button>
+
+                            <button>
+                                删除
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
