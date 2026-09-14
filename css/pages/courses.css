@@ -1,0 +1,293 @@
+/*
+文件列表
+ */
+.file-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 1px;
+
+    border: 1px solid #ebeef5;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+}
+
+/*
+文件项目
+ */
+
+.file-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+    padding: 16px;
+
+    background-color: #ffffff;
+
+    border-bottom: 1px solid #ebeef5;
+
+    transition: 0.2s;
+}
+
+.file-item:last-child {
+    border-bottom: none;
+}
+
+.file-item:hover {
+    background-color: #f8fbff;
+}
+
+/*
+文件图标
+ */
+
+.file-icon {
+    width: 48px;
+
+    height: 48px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 8px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+/*
+PDF
+ */
+
+.file-icon.pdf {
+    background-color: #fef0f0;
+
+    color: #f56c6c;
+}
+
+/*
+DOC
+ */
+
+.file-icon.doc {
+    background-color: #ecf5ff;
+
+    color: #409eff;
+}
+
+/*
+PPT
+ */
+
+.file-icon.ppt {
+    background-color: #fdf6ec;
+
+    color: #e6a23c;
+}
+
+/*
+ZIP
+ */
+
+.file-icon.zip {
+    background-color: #f4f4f5;
+
+    color: #909399;
+}
+
+/*
+文件主体
+ */
+
+.file-main {
+    flex: 1;
+
+    min-width: 0;
+}
+
+/*
+文件名称
+ */
+
+.file-main h3 {
+    margin: 0 0 6px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+/*
+课程名称
+ */
+
+.file-main p {
+    margin: 0;
+
+    color: #909399;
+
+    font-size: 13px;
+}
+
+/*
+文件元文件
+ */
+
+.file-meta {
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    flex-shrink: 0;
+
+    color: #909399;
+
+    font-size: 13px;
+}
+
+/*
+操作按钮
+ */
+
+.file-actions {
+    display: flex;
+
+    gap: 6px;
+
+    flex-shrink: 0;
+}
+
+.file-actions button {
+    padding: 6px 10px;
+
+    border: none;
+
+    border-radius: 4px;
+
+    background-color: transparent;
+
+    color: #409eff;
+
+    cursor: pointer;
+}
+
+.file-actions button:hover {
+    background-color: #ecf5ff;
+}
+
+.file-actions button:last-child {
+    color: #f56c6c;
+}
+
+.file-actions button:last-child:hover {
+    background-color: #fef0f0;
+}
+
+
+/*
+响应式处理
+ */
+
+@media (max-width: 768px) {
+
+    .file-item {
+        align-items: flex-start;
+
+        flex-wrap: wrap;
+    }
+
+    .file-main {
+        width: calc(100% - 64px);
+    }
+
+    .file-meta {
+        width: 100%;
+
+        padding-left: 64px;
+
+        flex-wrap: wrap;
+
+        gap: 8px 16px;
+    }
+
+    .file-actions {
+        width: 100%;
+
+        padding-left: 64px;
+
+        justify-content: flex-start;
+    }
+
+}
+
+/*
+给搜索框加响应式
+ */
+
+@media (max-width: 768px) {
+
+    .panel-header {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 12px;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+
+}
+
+/*
+分类栏处理
+ */
+
+.filter-panel {
+    display: flex;
+
+    gap: 8px;
+
+    margin-bottom: 20px;
+
+    padding: 6px;
+
+    background-color: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+
+    .filter-panel {
+        overflow-x: auto;
+    }
+
+    .filter-item {
+        flex-shrink: 0;
+    }
+
+}
