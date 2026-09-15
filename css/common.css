@@ -1,0 +1,114 @@
+/* =========================
+   页面基础
+   ========================= */
+
+body {
+    font-family:
+            Arial,
+            "Microsoft YaHei",
+            sans-serif;
+
+    color: var(--text-primary);
+    background-color: var(--bg-color);
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   通用容器
+   ========================= */
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   通用卡片
+   ========================= */
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-medium);
+    padding: var(--spacing-medium);
+}
+
+
+/* =========================
+   通用按钮
+   ========================= */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 9px 16px;
+
+    border: none;
+    border-radius: var(--radius-small);
+
+    cursor: pointer;
+}
+
+
+/* 主按钮 */
+
+.btn-primary {
+    color: #fff;
+    background-color: var(--primary-color);
+}
+
+
+/* 次要按钮 */
+
+.btn-secondary {
+    color: var(--text-primary);
+    background-color: #f4f4f5;
+}
+
+
+/* =========================
+   通用文字
+   ========================= */
+
+.text-primary {
+    color: var(--text-primary);
+}
+
+.text-secondary {
+    color: var(--text-secondary);
+}
+
+.text-muted {
+    color: var(--text-muted);
+}
+
+
+/* =========================
+   通用标签
+   ========================= */
+
+.tag {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 4px 10px;
+
+    border-radius: 5px;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   隐藏元素
+   ========================= */
+
+.hidden {
+    display: none;
+}
