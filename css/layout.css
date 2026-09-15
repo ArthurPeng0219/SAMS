@@ -1,3 +1,6 @@
+/*
+Header
+ */
 .header {
     height: 64px;
     display: flex;
@@ -10,11 +13,17 @@
     border-bottom: 1px solid var(--border-color);
 }
 
+/*
+页面整体布局
+ */
 .layout {
     display: flex;
     min-height: calc(100vh - 64px);
 }
 
+/*
+Sidebar
+ */
 .sidebar {
     width: 220px;
     flex-shrink: 0;
@@ -23,6 +32,9 @@
     border-right: 1px solid var(--border-color);
 }
 
+/*
+Main
+ */
 .main {
     flex: 1;
     min-width: 0;
