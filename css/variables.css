@@ -1,0 +1,30 @@
+:root {
+    /* 主色 */
+    --primary-color: #409eff;
+
+    /* 文字颜色 */
+    --text-primary: #303133;
+    --text-secondary: #606266;
+    --text-muted: #909399;
+
+    /* 边框 */
+    --border-color: #ebeef5;
+
+    /* 背景 */
+    --bg-color: #f5f7fa;
+    --card-bg: #ffffff;
+
+    /* 圆角 */
+    --radius-small: 6px;
+    --radius-medium: 8px;
+    --radius-large: 10px;
+
+    /* 间距 */
+    --spacing-small: 10px;
+    --spacing-medium: 20px;
+    --spacing-large: 30px;
+
+    /* 阴影 */
+    --shadow-card:
+            0 2px 12px rgba(0, 0, 0, 0.05);
+}
