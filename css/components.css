@@ -34,46 +34,6 @@
 }
 
 
-/* =====================
-   Button
-   ===================== */
-
-.primary-button,
-.secondary-button {
-    padding: 10px 18px;
-
-    border-radius: 6px;
-
-    cursor: pointer;
-
-    font-size: 14px;
-}
-
-.primary-button {
-    border: 1px solid #409eff;
-
-    background-color: #409eff;
-
-    color: white;
-}
-
-.secondary-button {
-    border: 1px solid #dcdfe6;
-
-    background-color: white;
-
-    color: #606266;
-}
-
-.primary-button:hover {
-    opacity: 0.9;
-}
-
-.secondary-button:hover {
-    background-color: #f5f7fa;
-}
-
-
 /*
 表格
  */
@@ -161,9 +121,10 @@
 }
 
 
-/*
-PageHeader
- */
+/* =========================
+   页面标题
+   ========================= */
+
 .page-header {
     display: flex;
     align-items: center;
@@ -173,8 +134,12 @@ PageHeader
 }
 
 .page-header h1 {
-    margin-bottom: 8px;
+    margin-bottom: 6px;
+
+    color: var(--text-primary);
+
     font-size: 24px;
+    font-weight: 600;
 }
 
 .page-header p {
@@ -182,22 +147,68 @@ PageHeader
     font-size: 14px;
 }
 
-
-/*
-Card
- */
+/* =========================
+   Card
+   ========================= */
 
 .card {
     background-color: var(--card-bg);
+
     border: 1px solid var(--border-color);
+
     border-radius: var(--radius-medium);
-    padding: 20px;
+
+    padding: var(--spacing-medium);
+
+    box-shadow: var(--shadow-card);
 }
 
 
-/*
-Button
- */
+.card-hover {
+    transition: 0.2s;
+}
+
+.card-hover:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+            0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   统计卡片
+   ========================= */
+
+.stat-card {
+    padding: 20px;
+
+    background-color: var(--card-bg);
+
+    border: 1px solid var(--border-color);
+
+    border-radius: var(--radius-medium);
+}
+
+.stat-label {
+    margin-bottom: 8px;
+
+    color: var(--text-secondary);
+
+    font-size: 14px;
+}
+
+.stat-value {
+    color: var(--text-primary);
+
+    font-size: 28px;
+    font-weight: 600;
+}
+
+
+
+/* =========================
+   Button
+   ========================= */
 
 .btn {
     display: inline-flex;
@@ -206,10 +217,14 @@ Button
 
     padding: 9px 16px;
 
-    border: none;
-    border-radius: 6px;
+    border: 1px solid transparent;
+    border-radius: var(--radius-small);
+
+    font-size: 14px;
 
     cursor: pointer;
+
+    transition: 0.2s;
 }
 
 .btn-primary {
@@ -217,7 +232,202 @@ Button
     background-color: var(--primary-color);
 }
 
+.btn-primary:hover {
+    opacity: 0.9;
+}
+
+
 .btn-secondary {
     color: var(--text-primary);
     background-color: #f4f4f5;
+    border-color: #dcdfe6;
+}
+
+.btn-secondary:hover {
+    background-color: #e9e9eb;
+}
+
+.btn-danger {
+    color: #f56c6c;
+    background-color: #fef0f0;
+    border-color: #fde2e2;
+}
+
+.btn-danger:hover {
+    background-color: #fde2e2;
+}
+
+
+/* =========================
+   Logo
+   ========================= */
+
+.logo {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-primary);
+
+    white-space: nowrap;
+}
+
+
+/* =========================
+   用户信息
+   ========================= */
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+
+/* =========================
+   头像
+   ========================= */
+
+.avatar {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    color: #ffffff;
+    background-color: var(--primary-color);
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   Sidebar 菜单
+   ========================= */
+
+.menu {
+    display: flex;
+    flex-direction: column;
+
+    padding: 16px 12px;
+}
+
+
+.menu-item {
+    display: flex;
+    align-items: center;
+
+    padding: 11px 14px;
+    margin-bottom: 4px;
+
+    border-radius: 6px;
+
+    color: var(--text-secondary);
+
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+
+
+.menu-item:hover {
+    color: var(--primary-color);
+    background-color: #ecf5ff;
+}
+
+
+.menu-item.active {
+    color: var(--primary-color);
+    background-color: #ecf5ff;
+    font-weight: 600;
+}
+
+
+/* =========================
+   Tag
+   ========================= */
+
+.tag {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 4px 10px;
+
+    border-radius: 5px;
+
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.tag-primary {
+    color: #409eff;
+    background-color: #ecf5ff;
+}
+
+.tag-success {
+    color: #67c23a;
+    background-color: #f0f9eb;
+}
+
+.tag-warning {
+    color: #e6a23c;
+    background-color: #fdf6ec;
+}
+
+.tag-danger {
+    color: #f56c6c;
+    background-color: #fef0f0;
+}
+
+
+
+/* =========================
+   Filter Panel
+   ========================= */
+
+.filter-panel {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 20px;
+
+    padding: 12px;
+
+    background-color: var(--card-bg);
+
+    border: 1px solid var(--border-color);
+
+    border-radius: var(--radius-medium);
+}
+
+.filter-item {
+    padding: 7px 14px;
+
+    border: none;
+    border-radius: 6px;
+
+    color: var(--text-secondary);
+    background-color: transparent;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.filter-item:hover {
+    color: var(--primary-color);
+    background-color: #ecf5ff;
+}
+
+.filter-item.active {
+    color: #ffffff;
+    background-color: var(--primary-color);
 }
