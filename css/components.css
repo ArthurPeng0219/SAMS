@@ -159,3 +159,65 @@
 .search-input:focus {
     border-color: #409eff;
 }
+
+
+/*
+PageHeader
+ */
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 24px;
+}
+
+.page-header h1 {
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+.page-header p {
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+
+/*
+Card
+ */
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-medium);
+    padding: 20px;
+}
+
+
+/*
+Button
+ */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 9px 16px;
+
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: var(--primary-color);
+}
+
+.btn-secondary {
+    color: var(--text-primary);
+    background-color: #f4f4f5;
+}
