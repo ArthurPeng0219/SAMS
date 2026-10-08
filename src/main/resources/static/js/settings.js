@@ -76,6 +76,13 @@ function bindSwitchChange(card) {
             const item = settingItems.find(function (row) {
                 return row.id === id;
             });
+            if (item) {
+                item.enabled = input.checked;
+            }
+            // 深色模式要立刻生效，不用刷新页面
+            if (item && item.settingKey === 'darkMode') {
+                applyTheme(input.checked);
+            }
             toast((item ? item.label : '设置项') + '已' + (input.checked ? '开启' : '关闭'));
         } catch (error) {
             input.checked = !input.checked;

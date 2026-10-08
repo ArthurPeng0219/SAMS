@@ -115,3 +115,38 @@ function ask(label, current) {
 function statusClass(name) {
     return ['success', 'good', 'warning', 'danger'].indexOf(name) >= 0 ? name : 'good';
 }
+
+
+/* ============================================================
+   深色模式
+   主题状态存在数据库的 system_setting.darkMode 里（系统管理页面那个开关），
+   每个页面加载时都跟服务器对一次；同时用 localStorage 缓存，
+   好让刷新时由 <head> 里的内联脚本先把主题贴上，避免闪一下白底。
+   ============================================================ */
+
+const THEME_KEY = 'sams-theme';
+
+/** 切换深色 / 浅色，并记到本地缓存 */
+function applyTheme(dark) {
+    if (dark) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+        document.documentElement.removeAttribute('data-theme');
+    }
+    try {
+        localStorage.setItem(THEME_KEY, dark ? 'dark' : 'light');
+    } catch (error) {
+        /* 隐私模式下 localStorage 可能不可用，忽略即可 */
+    }
+}
+
+window.addEventListener('DOMContentLoaded', function () {
+    API.get('/settings/items').then(function (items) {
+        const darkMode = (items || []).filter(function (row) {
+            return row.settingKey === 'darkMode';
+        })[0];
+        applyTheme(!!(darkMode && darkMode.enabled));
+    }).catch(function () {
+        /* 接口拿不到就沿用本地缓存里的主题 */
+    });
+});

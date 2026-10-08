@@ -1,0 +1,447 @@
+/* =========================================================
+   dark.css —— 深色模式
+   只在 <html data-theme="dark"> 时生效。
+   只覆盖颜色（background / color / border-color / shadow），
+   不改任何布局、尺寸、间距 —— 所以页面结构与浅色模式完全一致。
+   ========================================================= */
+
+html[data-theme="dark"] {
+    /* 让浏览器原生控件（滚动条、勾选框等）也切到深色 */
+    color-scheme: dark;
+
+    /* 直接覆盖 variables.css 里定义的主题变量，一批组件会自动跟着变 */
+    --text-primary: #e6e8eb;
+    --text-secondary: #aeb4bd;
+    --text-muted: #878d96;
+    --border-color: #2c313a;
+    --bg-color: #15181d;
+    --card-bg: #1d2129;
+    --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.45);
+}
+
+
+/* =========================
+   页面基础
+   ========================= */
+
+html[data-theme="dark"] body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+}
+
+
+/* =========================
+   顶部导航 / 侧边栏
+   ========================= */
+
+html[data-theme="dark"] .header {
+    background-color: var(--card-bg);
+    border-bottom-color: var(--border-color);
+}
+
+html[data-theme="dark"] .sidebar {
+    background-color: var(--card-bg);
+    border-right-color: var(--border-color);
+}
+
+html[data-theme="dark"] .menu-item {
+    color: var(--text-secondary);
+}
+
+html[data-theme="dark"] .menu-item:hover,
+html[data-theme="dark"] .menu-item.active {
+    color: #79bbff;
+    background-color: rgba(64, 158, 255, 0.16);
+}
+
+
+/* =========================
+   卡片 / 面板 / 统计卡
+   ========================= */
+
+html[data-theme="dark"] .panel,
+html[data-theme="dark"] .stat-card,
+html[data-theme="dark"] .analysis-card,
+html[data-theme="dark"] .growth-stat-card,
+html[data-theme="dark"] .practice-card,
+html[data-theme="dark"] .resume-card,
+html[data-theme="dark"] .settings-card,
+html[data-theme="dark"] .certificate-card {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+}
+
+html[data-theme="dark"] .stat-title,
+html[data-theme="dark"] .stat-label,
+html[data-theme="dark"] .stat-number,
+html[data-theme="dark"] .stat-value {
+    color: var(--text-primary);
+}
+
+html[data-theme="dark"] .stat-title,
+html[data-theme="dark"] .stat-label {
+    color: var(--text-muted);
+}
+
+html[data-theme="dark"] .growth-stat-card span {
+    color: var(--text-muted);
+}
+
+html[data-theme="dark"] .growth-stat-card strong {
+    color: var(--text-primary);
+}
+
+
+/* =========================
+   首页
+   ========================= */
+
+html[data-theme="dark"] .welcome p,
+html[data-theme="dark"] .honor-item p,
+html[data-theme="dark"] .quick-item small {
+    color: var(--text-muted);
+}
+
+html[data-theme="dark"] .score-item {
+    border-bottom-color: var(--border-color);
+}
+
+html[data-theme="dark"] .honor-icon {
+    background-color: rgba(64, 158, 255, 0.16);
+    color: #79bbff;
+}
+
+html[data-theme="dark"] .quick-item {
+    border-color: var(--border-color);
+}
+
+
+/* =========================
+   表格
+   ========================= */
+
+html[data-theme="dark"] .data-table th {
+    background-color: #232833;
+    color: var(--text-secondary);
+}
+
+html[data-theme="dark"] .data-table th,
+html[data-theme="dark"] .data-table td {
+    border-bottom-color: var(--border-color);
+}
+
+html[data-theme="dark"] .data-table tbody tr:hover {
+    background-color: #232833;
+}
+
+
+/* =========================
+   状态徽章 / 标签（浅色底换成半透明底）
+   ========================= */
+
+html[data-theme="dark"] .status.success,
+html[data-theme="dark"] .certificate-status,
+html[data-theme="dark"] .certificate-icon,
+html[data-theme="dark"] .status-tag {
+    background-color: rgba(103, 194, 58, 0.16);
+    color: #85ce61;
+}
+
+html[data-theme="dark"] .status.good {
+    background-color: rgba(64, 158, 255, 0.16);
+    color: #79bbff;
+}
+
+html[data-theme="dark"] .status.warning {
+    background-color: rgba(230, 162, 60, 0.16);
+    color: #e6a23c;
+}
+
+html[data-theme="dark"] .status.danger {
+    background-color: rgba(245, 108, 108, 0.16);
+    color: #f78989;
+}
+
+html[data-theme="dark"] .page-tag,
+html[data-theme="dark"] .practice-type,
+html[data-theme="dark"] .practice-type.project,
+html[data-theme="dark"] .course-file-icon {
+    background-color: rgba(64, 158, 255, 0.16);
+    color: #79bbff;
+}
+
+html[data-theme="dark"] .practice-type.campus {
+    background-color: rgba(103, 194, 58, 0.16);
+    color: #85ce61;
+}
+
+html[data-theme="dark"] .tech-tag,
+html[data-theme="dark"] .skill-tag {
+    background-color: #252a33;
+    color: var(--text-secondary);
+}
+
+
+/* =========================
+   输入框 / 搜索框
+   ========================= */
+
+html[data-theme="dark"] .search-input,
+html[data-theme="dark"] .form-item input {
+    background-color: #232833;
+    border-color: var(--border-color);
+    color: var(--text-primary);
+}
+
+html[data-theme="dark"] .search-input::placeholder,
+html[data-theme="dark"] .form-item input::placeholder {
+    color: var(--text-muted);
+}
+
+html[data-theme="dark"] .search-input:focus,
+html[data-theme="dark"] .form-item input:focus {
+    border-color: var(--primary-color);
+}
+
+
+/* =========================
+   按钮
+   ========================= */
+
+html[data-theme="dark"] .btn-secondary,
+html[data-theme="dark"] .setting-button {
+    background-color: #252a33;
+    border-color: var(--border-color);
+    color: var(--text-primary);
+}
+
+html[data-theme="dark"] .btn-secondary:hover,
+html[data-theme="dark"] .setting-button:hover {
+    background-color: #2c313a;
+    border-color: #3a4150;
+    color: #79bbff;
+}
+
+html[data-theme="dark"] .btn-danger,
+html[data-theme="dark"] .danger-button {
+    background-color: rgba(245, 108, 108, 0.14);
+    border-color: rgba(245, 108, 108, 0.3);
+    color: #f78989;
+}
+
+html[data-theme="dark"] .btn-danger:hover,
+html[data-theme="dark"] .danger-button:hover {
+    background-color: rgba(245, 108, 108, 0.24);
+    border-color: #f56c6c;
+}
+
+
+/* =========================
+   筛选栏
+   ========================= */
+
+html[data-theme="dark"] .filter-item {
+    color: var(--text-secondary);
+}
+
+html[data-theme="dark"] .filter-item:hover {
+    color: #79bbff;
+    background-color: rgba(64, 158, 255, 0.16);
+}
+
+
+/* =========================
+   个人信息页
+   ========================= */
+
+html[data-theme="dark"] .info-item,
+html[data-theme="dark"] .form-actions {
+    border-color: var(--border-color);
+}
+
+html[data-theme="dark"] .info-label {
+    color: var(--text-muted);
+}
+
+
+/* =========================
+   求职档案页
+   ========================= */
+
+html[data-theme="dark"] .profile-info,
+html[data-theme="dark"] .resume-project {
+    border-top-color: var(--border-color);
+}
+
+html[data-theme="dark"] .profile-info strong,
+html[data-theme="dark"] .intention-item strong {
+    color: var(--text-primary);
+}
+
+html[data-theme="dark"] .profile-info span,
+html[data-theme="dark"] .intention-item span,
+html[data-theme="dark"] .education-item span,
+html[data-theme="dark"] .project-header span,
+html[data-theme="dark"] .profile-major {
+    color: var(--text-muted);
+}
+
+html[data-theme="dark"] .education-item p,
+html[data-theme="dark"] .advantage-text,
+html[data-theme="dark"] .resume-project > p {
+    color: var(--text-secondary);
+}
+
+html[data-theme="dark"] .profile-avatar {
+    background-color: rgba(64, 158, 255, 0.2);
+    color: #79bbff;
+}
+
+
+/* =========================
+   证书页
+   ========================= */
+
+html[data-theme="dark"] .certificate-type,
+html[data-theme="dark"] .certificate-info span {
+    color: var(--text-muted);
+}
+
+html[data-theme="dark"] .certificate-info strong {
+    color: var(--text-primary);
+}
+
+/* 原本悬停阴影是 rgba(0,0,0,.96)，深色下会糊成一块黑，改成柔和阴影 */
+html[data-theme="dark"] .certificate-card:hover {
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.55);
+}
+
+
+/* =========================
+   课程资料页
+   ========================= */
+
+html[data-theme="dark"] .course-file-name {
+    color: var(--text-primary);
+}
+
+html[data-theme="dark"] .course-file-meta {
+    color: var(--text-secondary);
+}
+
+
+/* =========================
+   实践档案页
+   ========================= */
+
+html[data-theme="dark"] .year-title,
+html[data-theme="dark"] .practice-header h2,
+html[data-theme="dark"] .practice-result strong {
+    color: var(--text-primary);
+}
+
+html[data-theme="dark"] .practice-date {
+    color: var(--text-muted);
+}
+
+html[data-theme="dark"] .practice-description,
+html[data-theme="dark"] .practice-result p {
+    color: var(--text-secondary);
+}
+
+html[data-theme="dark"] .practice-result {
+    background-color: #232833;
+}
+
+html[data-theme="dark"] .practice-actions {
+    border-top-color: var(--border-color);
+}
+
+html[data-theme="dark"] .timeline-year::before,
+html[data-theme="dark"] .growth-timeline::before {
+    background-color: var(--border-color);
+}
+
+html[data-theme="dark"] .timeline-dot,
+html[data-theme="dark"] .growth-dot {
+    border-color: rgba(64, 158, 255, 0.25);
+}
+
+
+/* =========================
+   成长分析页：图表
+   ========================= */
+
+html[data-theme="dark"] .analysis-header p,
+html[data-theme="dark"] .chart-y-axis,
+html[data-theme="dark"] .bar-group span,
+html[data-theme="dark"] .skill-progress-header span {
+    color: var(--text-muted);
+}
+
+html[data-theme="dark"] .chart-content {
+    border-bottom-color: #3a4150;
+}
+
+html[data-theme="dark"] .chart-grid-line {
+    border-top-color: var(--border-color);
+}
+
+html[data-theme="dark"] .progress {
+    background-color: var(--border-color);
+}
+
+html[data-theme="dark"] .growth-event-content p {
+    color: var(--text-secondary);
+}
+
+
+/* =========================
+   系统管理页
+   ========================= */
+
+html[data-theme="dark"] .settings-section-header h2,
+html[data-theme="dark"] .setting-info strong {
+    color: var(--text-primary);
+}
+
+html[data-theme="dark"] .settings-section-header p,
+html[data-theme="dark"] .setting-info span {
+    color: var(--text-muted);
+}
+
+html[data-theme="dark"] .setting-row {
+    border-bottom-color: var(--border-color);
+}
+
+html[data-theme="dark"] .danger-row {
+    background-color: rgba(245, 108, 108, 0.07);
+}
+
+html[data-theme="dark"] .switch-slider {
+    background-color: #3a4150;
+}
+
+html[data-theme="dark"] .switch-slider::before {
+    background-color: #e6e8eb;
+}
+
+
+/* =========================
+   补漏（覆盖率检查扫出来的 4 处）
+   ========================= */
+
+/* profile.css 里 .page-header p 写死了 #909399，晚于 components.css 加载会盖掉变量 */
+html[data-theme="dark"] .page-header p,
+html[data-theme="dark"] .contact-panel .panel-header p {
+    color: var(--text-secondary);
+}
+
+/* 实践卡片的操作按钮本来是「浅蓝 / 浅红」悬停底色 */
+html[data-theme="dark"] .practice-actions button:hover {
+    background-color: rgba(64, 158, 255, 0.16);
+}
+
+html[data-theme="dark"] .practice-actions button:last-child:hover {
+    background-color: rgba(245, 108, 108, 0.16);
+}

@@ -11,6 +11,13 @@
     <!-- 统计卡片的栅格布局在 style.css 里，之前这几个页面漏引了 -->
     <link rel="stylesheet" href="../css/style.css">
 
+    <!-- ===== 深色模式：先按本地缓存贴主题，避免刷新时闪一下白底 ===== -->
+    <script>
+        if (localStorage.getItem('sams-theme') === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+    </script>
+    <link rel="stylesheet" href="../css/dark.css">
 </head>
 <body>
 

@@ -16,6 +16,13 @@
     <link rel="stylesheet" href="../css/components.css">
     <link rel="stylesheet" href="../css/pages/setting.css">
 
+    <!-- ===== 深色模式：先按本地缓存贴主题，避免刷新时闪一下白底 ===== -->
+    <script>
+        if (localStorage.getItem('sams-theme') === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+    </script>
+    <link rel="stylesheet" href="../css/dark.css">
 </head>
 
 
