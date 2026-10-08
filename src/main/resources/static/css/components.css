@@ -98,6 +98,19 @@
     color: #409eff;
 }
 
+/* 原本缺这两条：成绩低于 80 分时状态标签会没有样式 */
+.status.warning {
+    background-color: #fdf6ec;
+
+    color: #e6a23c;
+}
+
+.status.danger {
+    background-color: #fef0f0;
+
+    color: #f56c6c;
+}
+
 /*
 搜索框
  */
