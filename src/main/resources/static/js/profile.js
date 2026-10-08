@@ -1,7 +1,11 @@
 /* ============================================================
    profile.js —— 个人信息
-   GET /api/profile 读，PUT /api/profile 存
+   GET  /api/profile         读基本信息
+   PUT  /api/profile         保存联系方式
+   PUT  /api/profile/avatar  更换头像文字
    ============================================================ */
+
+let profileStudent = null;
 
 document.addEventListener('DOMContentLoaded', function () {
     init();
@@ -10,10 +14,12 @@ document.addEventListener('DOMContentLoaded', function () {
 async function init() {
     try {
         const student = await API.get('/profile');
+        profileStudent = student;
         renderHeader(student);
         renderProfileCard(student);
         renderInfoList(student);
         fillForm(student);
+        bindAvatarButton();
         bindForm();
     } catch (error) {
         showError(document.querySelector('.info-list'), error);
@@ -25,7 +31,7 @@ function renderProfileCard(student) {
     const name = document.querySelector('.profile-card h2');
     const major = document.querySelector('.profile-major');
     if (avatar) {
-        avatar.textContent = student.avatarText || (student.name || '').slice(0, 1);
+        avatar.textContent = avatarOf(student);
     }
     if (name) {
         name.textContent = student.name;
@@ -33,6 +39,10 @@ function renderProfileCard(student) {
     if (major) {
         major.textContent = student.major;
     }
+}
+
+function avatarOf(student) {
+    return student.avatarText || (student.name || '').slice(0, 1);
 }
 
 function renderInfoList(student) {
@@ -58,13 +68,38 @@ function fillForm(student) {
     document.querySelector('#github').value = student.github || '';
 }
 
+/* 「更换头像」：改的是数据库里的 avatarText */
+function bindAvatarButton() {
+    const button = document.querySelector('.profile-card button');
+    if (!button) {
+        return;
+    }
+    button.addEventListener('click', async function () {
+        const value = ask('新的头像文字（最多 2 个字符）：', profileStudent ? avatarOf(profileStudent) : '');
+        if (value === null) {
+            return;
+        }
+        try {
+            const student = await API.put('/profile/avatar', { avatarText: value });
+            profileStudent = student;
+            document.querySelectorAll('.profile-avatar').forEach(function (el) {
+                el.textContent = avatarOf(student);
+            });
+            renderHeader(student);
+            toast('头像已更新');
+        } catch (error) {
+            toast(error.message, true);
+        }
+    });
+}
+
 function bindForm() {
     const form = document.querySelector('.profile-form');
 
     form.addEventListener('submit', async function (event) {
         event.preventDefault();
         try {
-            await API.put('/profile', {
+            profileStudent = await API.put('/profile', {
                 phone: form.querySelector('#phone').value,
                 email: form.querySelector('#email').value,
                 city: form.querySelector('#address').value,
